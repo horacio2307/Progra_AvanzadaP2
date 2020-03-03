@@ -11,7 +11,8 @@ global A7
 global A8
 global A9
 global bandera
-aux = A1 = A2 = A3 = A4 = A5 = A6 = A7 = A8 = A9 = 0
+aux = 0
+A1 = A2 = A3 = A4 = A5 = A6 = A7 = A8 = A9 = 10
 bandera = 2
 
 def resultado():
@@ -107,6 +108,19 @@ def resultado():
 
 def Reinicio():
 
+    global bandera
+    global A1
+    global A2
+    global A3
+    global A4
+    global A5
+    global A6
+    global A7
+    global A8
+    global A9
+
+    A1 = A2 = A3 = A4 = A5 = A6 = A7 = A8 = A9 = 10
+
     V1= Label(ventana,text="#")
     V2= Label(ventana,text="#")
     V3= Label(ventana,text="#")
@@ -134,6 +148,7 @@ def Reinicio():
     V7.grid(column=0,row=2)
     V8.grid(column=1,row=2)
     V9.grid(column=2,row=2)
+    bandera=2
 
 #def uno():
 
